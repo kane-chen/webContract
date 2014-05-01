@@ -1,7 +1,5 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: contract.dao
-Export-Package: cn.kane.osgi.dao.test;version="1.0.0";uses:="javax.ann
- otation,org.junit,org.junit.runner,org.springframework.test.context"
 Bundle-Version: 1.0.0
 Bundle-Name: Contract DAO
 Built-By: chenqingxiang

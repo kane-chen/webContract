@@ -12,3 +12,5 @@ Import-Template:
 Excluded-Imports: 
  org.springframework.test.*,
  org.junit.*
+Excluded-Exports: 
+ cn.kane.osgi.dao.test
