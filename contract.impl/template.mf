@@ -1,14 +1,13 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: contract service implements
-Bundle-SymbolicName: gcontract.impl
+Bundle-SymbolicName: contract.impl
 Bundle-Vendor: kane.ch
-Bundle-Version: 3.0.0
+Bundle-Version: 1.0.0
 Import-Template: 
  javax.sql;version="0",
  org.apache.commons.dbcp.*;version="[1.2.2.osgi, 1.2.2.osgi]",
- org.springframework.*;version="[3.0, 3.5)",
- contract;version="[3.0, 4.0)",
+ org.springframework.*;version="[3.0, 3.5)"
 Import-Bundle: 
  com.springsource.org.eclipse.persistence;version="[2.0.0, 2.1.0)",
  com.springsource.org.eclipse.persistence.jpa;version="[2.0.0, 2.1.0)"

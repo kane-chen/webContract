@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Contract Web
 Bundle-SymbolicName: contract.web
-Bundle-Version: 3.0.0
+Bundle-Version: 1.0.0
 Bundle-ClassPath: .,WEB-INF/classes
 Web-ContextPath: contract
 Import-Template: 
@@ -18,6 +18,7 @@ Import-Bundle:
 Import-Library: 
  org.springframework.spring;version="[3.0, 3.5)"
 Excluded-Exports: 
+ cn.kane.osgi.controller.test,
  contract.tests,
  contract.web,
  images,
