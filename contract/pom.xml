@@ -68,7 +68,7 @@
 				<configuration>
 					<outputDirectory>${project.build.directory}/par-provided</outputDirectory>
 					<overWriteIfNewer>true</overWriteIfNewer>
-					<excludeGroupIds>org.eclipse.virgo,org.apache.log4j,com.h2database</excludeGroupIds>
+					<excludeGroupIds>org.eclipse.virgo,org.apache.log4j,com.h2database,cn.kane.osgi</excludeGroupIds>
 				</configuration>
 				<executions>
 					<execution>

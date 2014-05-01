@@ -1,8 +1,5 @@
 Manifest-Version: 1.0
-Bundle-Version: 1.0.0
-Bundle-Name: Contract DAO
-Built-By: chenqingxiang
-Bundle-ManifestVersion: 2
-Bundle-Vendor: SpringSource
-Tool: Bundlor 1.1.0.RELEASE
+Application-Version: 1.0.0.RELEASE
+Application-Name: Greenpages PAR
+Application-SymbolicName: contract
 
