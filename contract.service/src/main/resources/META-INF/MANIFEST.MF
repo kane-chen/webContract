@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: contract.service
+Export-Package: cn.kane.osgi.domain;version="3.0.0",cn.kane.osgi.servi
+ ce;version="3.0.0";uses:="cn.kane.osgi.domain",cn.kane.test.service;v
+ ersion="3.0.0";uses:="javax.annotation,org.junit,org.junit.runner,org
+ .springframework.test.context"
+Bundle-Version: 3.0.0
+Bundle-Name: contract Service
+Built-By: chenqingxiang
+Bundle-ManifestVersion: 2
+Bundle-Vendor: kane.ch
+Import-Package: javax.annotation,org.junit,org.junit.runner,org.spring
+ framework.stereotype;version="[3.0, 3.5)",org.springframework.test.co
+ ntext;version="[3.0, 3.5)",org.springframework.util;version="[3.0, 3.
+ 5)"
+Tool: Bundlor 1.1.0.RELEASE
+Created-By: Maven Integration for Eclipse
+Build-Jdk: 1.8.0_05
+
