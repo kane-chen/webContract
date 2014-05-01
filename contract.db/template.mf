@@ -9,3 +9,6 @@ Import-Package:
 Import-Template: 
  org.apache.commons.dbcp.*;version="[1.2.2.osgi, 1.2.2.osgi]",
  javax.sql;version="0"
+Excluded-Imports: 
+ org.springframework.test.*,
+ org.junit.*

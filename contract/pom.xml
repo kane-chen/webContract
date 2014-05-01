@@ -59,7 +59,7 @@
 				<artifactId>maven-par-plugin</artifactId>
 				<version>1.0.0.RELEASE</version>
 				<configuration>
-					<applicationSymbolicName>greenpages</applicationSymbolicName>
+					<applicationSymbolicName>contract</applicationSymbolicName>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -100,7 +100,7 @@
 											maven-dependency-plugin
 										</artifactId>
 										<versionRange>
-											[2.1,)
+											[0.1,)
 										</versionRange>
 										<goals>
 											<goal>

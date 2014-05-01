@@ -1,2 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
+Bundle-Version: 1.0.0
+Bundle-Name: Contract DAO
+Built-By: chenqingxiang
+Bundle-ManifestVersion: 2
+Bundle-Vendor: SpringSource

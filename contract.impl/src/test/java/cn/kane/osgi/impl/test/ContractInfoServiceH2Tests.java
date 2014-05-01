@@ -18,6 +18,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -37,6 +38,8 @@ public class ContractInfoServiceH2Tests {
     private ContractInfoService contInfoService;
 
     @Test
+    @Ignore
+    //run with jvm-option: -javaagent:D:\ext_env\maven_repo\org\springframework\spring-instrument\3.1.0.RELEASE\spring-instrument-3.1.0.RELEASE.jar -XX:-UseSplitVerifier
     public void search() {
         List<ContractInfo> results = this.contInfoService.findByNameLike("johnson");
         assertNotNull(results);

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: contract.dao
+Export-Package: cn.kane.osgi.dao.test;version="1.0.0";uses:="javax.ann
+ otation,org.junit,org.junit.runner,org.springframework.test.context"
+Bundle-Version: 1.0.0
+Bundle-Name: Contract DAO
+Built-By: chenqingxiang
+Bundle-ManifestVersion: 2
+Bundle-Vendor: SpringSource
+Import-Package: javax.annotation,javax.sql;version="0",org.apache.commons.dbcp;version="[1.2.2.osgi, 1.2.2.osgi]",org.h2;ve
+ rsion="[1.0.71, 1.0.71]"
+Tool: Bundlor 1.1.0.RELEASE
+Created-By: Maven Integration for Eclipse
+Build-Jdk: 1.8.0_05
+
