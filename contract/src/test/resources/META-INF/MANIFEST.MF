@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Tool: Bundlor 1.1.0.RELEASE
+
