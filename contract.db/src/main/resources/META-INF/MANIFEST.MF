@@ -5,9 +5,9 @@ Bundle-Name: Contract DAO
 Built-By: chenqingxiang
 Bundle-ManifestVersion: 2
 Bundle-Vendor: SpringSource
-Import-Package: javax.annotation,javax.sql;version="0",junit.framework
- ,org.apache.commons.dbcp;version="[1.2.2.osgi, 1.2.2.osgi]",org.h2;ve
- rsion="[1.0.71, 1.0.71]"
+Import-Package: javax.annotation,javax.sql;version="0",org.apache.comm
+ ons.dbcp;version="[1.2.2.osgi, 1.2.2.osgi]",org.h2;version="[1.0.71, 
+ 1.0.71]"
 Tool: Bundlor 1.1.0.RELEASE
 Created-By: Maven Integration for Eclipse
 Build-Jdk: 1.8.0_05

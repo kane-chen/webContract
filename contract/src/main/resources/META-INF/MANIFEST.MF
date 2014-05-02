@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Application-Version: 1.0.0.RELEASE
-Application-Name: Greenpages PAR
+Application-Name: contract PAR
 Application-SymbolicName: contract
 

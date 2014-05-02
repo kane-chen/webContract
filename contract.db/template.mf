@@ -11,6 +11,7 @@ Import-Template:
  javax.sql;version="0"
 Excluded-Imports: 
  org.springframework.test.*,
- org.junit.*
+ org.junit.*,
+ junit.*
 Excluded-Exports: 
  cn.kane.osgi.dao.test
