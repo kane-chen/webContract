@@ -16,7 +16,7 @@
 		<div id="primary-navigation">
 			<div id="primary-left">
 				<ul>
-					<li><a href="/greenpages" title="Admin Console">GreenPages</a></li>
+					<li><a href="/contract" title="Admin Console">WebContract</a></li>
 				</ul>
 			</div>
 			<img id="left-curve" src="/contract/images/menu-curve-left.png"/>
