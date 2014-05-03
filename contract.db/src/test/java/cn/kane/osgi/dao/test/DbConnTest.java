@@ -19,8 +19,9 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "classpath:/META-INF/spring/module-context.xml"})
+//@ContextConfiguration(locations = { "classpath:/ds-mysql.xml"})
 @TestExecutionListeners(value = DependencyInjectionTestExecutionListener.class)
-public class H2DbTest {
+public class DbConnTest {
 
 	@Resource(name="dataSource")
 	private DataSource ds ;
