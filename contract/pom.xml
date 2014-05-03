@@ -42,7 +42,6 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>com.springsource.org.h2</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		<!-- Required for the web bundle as dependencies are not propagated up from war build types -->
 		<dependency>
