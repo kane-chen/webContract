@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="D:\ext_env\maven_repo\mysql\mysql-connector-java\5.1.17\mysql-connector-java-5.1.17.jar" />
+	<context id="context1">
+		<!-- pagination plugin -->
+		<!-- <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin> -->
+		<plugin type="cn.kane.mybatis.utils.PaginationMysqlPlugin" />
+		<commentGenerator>
+			<property name="suppressAllComments" value="false" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/test" userId="root"
+			password="" />
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- pagination -->
+		<javaModelGenerator targetPackage="cn.kane.domain"
+			targetProject="contract.dao" />
+		<sqlMapGenerator targetPackage="cn.kane.mapper"
+			targetProject="contract.dao" />
+		<javaClientGenerator targetPackage="cn.kane.dao"
+			targetProject="contract.dao" type="XMLMAPPER" />
+		<table schema="demo" tableName="listing" domainObjectName="Contract"/>
+	</context>
+</generatorConfiguration>
