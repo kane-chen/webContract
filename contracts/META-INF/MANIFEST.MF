@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Application-Version: 1.0.0
+Application-Name: WebContracts
+Application-Description: web  contract par
+Application-SymbolicName: contract
+
