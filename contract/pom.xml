@@ -8,7 +8,7 @@
 		<groupId>cn.kane.osgi</groupId>
 		<artifactId>contract.parent</artifactId>
 		<version>1.0.0.RELEASE</version>
-		<relativePath>../contract.parent</relativePath>
+		<relativePath>../contract.parent/pom.xml</relativePath>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
@@ -43,6 +43,11 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>com.springsource.org.h2</artifactId>
 		</dependency>
+		<dependency>
+	      <groupId>mysql</groupId>
+	      <artifactId>mysql-connector-java</artifactId>
+	      <version>5.1.30</version>
+	    </dependency>
 		<!-- Required for the web bundle as dependencies are not propagated up from war build types -->
 		<dependency>
 			<groupId>org.freemarker</groupId>
@@ -67,7 +72,7 @@
 				<configuration>
 					<outputDirectory>${project.build.directory}/par-provided</outputDirectory>
 					<overWriteIfNewer>true</overWriteIfNewer>
-					<excludeGroupIds>org.eclipse.virgo,org.apache.log4j,com.h2database,cn.kane.osgi</excludeGroupIds>
+					<excludeGroupIds>org.apache.log4j,com.h2database,cn.kane.osgi</excludeGroupIds>
 				</configuration>
 				<executions>
 					<execution>
