@@ -2,7 +2,7 @@
 .classpath
 .checkstyle
 .project
-.settings/
+# .settings/
 target/
 /target
 # Mobile Tools for Java (J2ME)
