@@ -3,16 +3,42 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
 	xmlns:p="http://www.springframework.org/schema/p">
+	
+<!-- dbcp's driver-class load by [class.forName('XXXX')],but dbcp's manifest.mf not import driver-class;so driver-class not found exception -->
 <!-- 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" 
 	 		p:driverClassName="org.h2.Driver" p:url="jdbc:h2:~/greenpages-db/greenpages"
 	 		p:username="greenpages" p:password="pass"
 	 		init-method="createDataSource" destroy-method="close"/>
- -->
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" 
 	 		p:driverClassName="com.mysql.jdbc.Driver" 
 	 		p:url="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8"
 	 		p:username="root" p:password=""
 	 		init-method="createDataSource" destroy-method="close"/>
+ -->
 
+
+	<bean id="mysqlDataSource" class="com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource">
+		<property name="createDatabaseIfNotExist" value="true"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8"/>
+		<property name="user" value="root"/>
+		<property name="password" value=""/>
+	</bean>
+
+	<!-- Commons-DBCP -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.datasources.SharedPoolDataSource" lazy-init="false" destroy-method="close">
+		<property name="connectionPoolDataSource" ref="mysqlDataSource"/>
+		<property name="maxActive" value="20"/>
+		<property name="maxIdle" value="3"/>
+	</bean>
+	
+	<!-- c3p0 -->
+    <!-- not tested yet, but should work same way
+	<bean id="dataSource2" class="com.mchange.v2.c3p0.ComboPooledDataSource" lazy-init="false">
+		<property name="connectionPoolDataSource" ref="mysqlDataSource"/>
+		<property name="maxPoolSize" value="15"/>
+		<property name="minPoolSize" value="3"/>
+	</bean>
+	-->
+	
 </beans>

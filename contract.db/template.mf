@@ -5,13 +5,19 @@ Bundle-SymbolicName: contract.dao
 Bundle-Vendor: SpringSource
 Bundle-Version: 1.0.0
 Import-Package: 
- org.h2;version="[1.0.71, 1.0.71]"
+ com.mysql.jdbc.jdbc2.optional;version="[5.1.30,5.1.30]",
+ org.h2;version="[1.0.71,1.0.71]"
 Import-Template: 
  org.apache.commons.dbcp.*;version="[1.2.2.osgi, 1.2.2.osgi]",
  javax.sql;version="0"
 Excluded-Imports: 
  org.springframework.test.*,
  org.junit.*,
- junit.*
+ junit.*,
+ org.mybatis.*,
+ org.apache.ibatis.annotations.*
 Excluded-Exports: 
- cn.kane.osgi.dao.test
+ cn.kane.osgi.dao.test,
+ cn.kane.dao.*,
+ cn.kane.mapper.*,
+ cn.kane.mybatis.utils.*

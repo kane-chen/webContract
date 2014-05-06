@@ -8,7 +8,7 @@
 		<groupId>cn.kane.osgi</groupId>
 		<artifactId>contract.parent</artifactId>
 		<version>1.0.0.RELEASE</version>
-		<relativePath>../contract.parent/pom.xml</relativePath>
+		<relativePath>../contract.parent</relativePath>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>

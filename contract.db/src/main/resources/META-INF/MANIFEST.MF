@@ -1,13 +1,17 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: contract.dao
+Export-Package: cn.kane.domain;version="1.0.0"
 Bundle-Version: 1.0.0
 Bundle-Name: Contract DAO
 Built-By: chenqingxiang
 Bundle-ManifestVersion: 2
 Bundle-Vendor: SpringSource
-Import-Package: javax.annotation,javax.sql;version="0",org.apache.comm
- ons.dbcp;version="[1.2.2.osgi, 1.2.2.osgi]",org.h2;version="[1.0.71, 
- 1.0.71]"
+Import-Package: com.mysql.jdbc.jdbc2.optional;version="[5.1.30,5.1.30]
+ ",javax.annotation,javax.sql;version="0",org.apache.commons.dbcp;vers
+ ion="[1.2.2.osgi, 1.2.2.osgi]",org.apache.commons.dbcp.datasources;ve
+ rsion="[1.2.2.osgi, 1.2.2.osgi]",org.apache.commons.logging,org.h2;ve
+ rsion="[1.0.71,1.0.71]",org.springframework.beans.factory.annotation,
+ org.springframework.jdbc.datasource
 Tool: Bundlor 1.1.0.RELEASE
 Created-By: Maven Integration for Eclipse
 Build-Jdk: 1.8.0_05
